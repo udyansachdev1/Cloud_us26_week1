@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <title>{{ title }}</title>
+    <!-- Add additional meta tags, styles, or scripts as needed -->
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+                <!-- Add more navigation items as needed -->
+            </ul>
+        </nav>
+        <h1>{{ title }}</h1>
+    </header>
+    <main>
+        <section id="latest-projects">
+            <h2>Latest Projects</h2>
+            {{ content | safe }}
+            <!-- Add your project details directly in the content block -->
+            
+            <!-- Project 1 -->
+            <div class="project">
+                <h3>Project Title 1</h3>
+                <p>Description of Project 1 goes here.</p>
+                <a href="#">Read more</a>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project">
+                <h3>Project Title 2</h3>
+                <p>Description of Project 2 goes here.</p>
+                <a href="#">Read more</a>
+            </div>
+
+            <!-- Add more project details as needed -->
+
+        </section>
+        <section id="about-me">
+            <h2>About Me</h2>
+            <p>Introduce yourself and provide some information about your skills, experience, or interests.</p>
+        </section>
+        <!-- Add more sections as needed -->
+    </main>
+    <footer>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+        <!-- Add additional footer information or links -->
+    </footer>
+</body>
+</html>
